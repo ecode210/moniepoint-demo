@@ -82,7 +82,7 @@ class HomeState extends ConsumerState<Home> {
                             5.horizontalSpace,
                             Text(
                               "Saint Petersburg",
-                              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                              style: Theme.of(context).textTheme.bodySmall!.copyWith(
                                     color: Theme.of(context).colorScheme.onPrimaryContainer,
                                   ),
                             ),
@@ -109,7 +109,7 @@ class HomeState extends ConsumerState<Home> {
                       20.horizontalSpace,
                     ],
                   ),
-                  30.verticalSpace,
+                  40.verticalSpace,
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20.w),
                     child: RichText(
@@ -129,7 +129,7 @@ class HomeState extends ConsumerState<Home> {
                       ),
                     ),
                   ).animate().fadeIn(delay: 500.ms, duration: 1000.ms, curve: Curves.easeIn),
-                  30.verticalSpace,
+                  40.verticalSpace,
                   Row(
                     children: [
                       20.horizontalSpace,
@@ -151,11 +151,12 @@ class HomeState extends ConsumerState<Home> {
                                       ),
                                 ),
                                 const Spacer(),
+                                10.verticalSpace,
                                 AnimatedDigitWidget(
                                   value: 1034,
                                   textStyle: Theme.of(context).textTheme.displayLarge!.copyWith(
                                         color: Theme.of(context).colorScheme.surface,
-                                        fontWeight: FontWeight.w900,
+                                        fontWeight: FontWeight.w800,
                                         fontSize: 50.sp,
                                       ),
                                   duration: 3000.ms,
@@ -163,9 +164,10 @@ class HomeState extends ConsumerState<Home> {
                                   enableSeparator: true,
                                   separateSymbol: " ",
                                 ),
+                                5.verticalSpace,
                                 Text(
                                   "offers",
-                                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                                         color: Theme.of(context).colorScheme.surface,
                                       ),
                                 ),
@@ -195,11 +197,12 @@ class HomeState extends ConsumerState<Home> {
                                       ),
                                 ),
                                 const Spacer(),
+                                10.verticalSpace,
                                 AnimatedDigitWidget(
                                   value: 2212,
                                   textStyle: Theme.of(context).textTheme.displayLarge!.copyWith(
                                         color: Theme.of(context).colorScheme.onPrimaryContainer,
-                                        fontWeight: FontWeight.w900,
+                                        fontWeight: FontWeight.w800,
                                         fontSize: 50.sp,
                                       ),
                                   duration: 3000.ms,
@@ -207,9 +210,10 @@ class HomeState extends ConsumerState<Home> {
                                   enableSeparator: true,
                                   separateSymbol: " ",
                                 ),
+                                5.verticalSpace,
                                 Text(
                                   "offers",
-                                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                                         color: Theme.of(context).colorScheme.onPrimaryContainer,
                                       ),
                                 ),
@@ -223,7 +227,7 @@ class HomeState extends ConsumerState<Home> {
                       20.horizontalSpace,
                     ],
                   ),
-                  30.verticalSpace,
+                  40.verticalSpace,
                   Stack(
                     clipBehavior: Clip.none,
                     alignment: Alignment.bottomCenter,

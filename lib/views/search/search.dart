@@ -75,7 +75,7 @@ class SearchState extends ConsumerState<Search> {
                       radius: 28.sp,
                       child: SvgPicture.asset(
                         SVGAssets.options,
-                        height: 20.h,
+                        height: 17.h,
                         fit: BoxFit.fitHeight,
                         colorFilter: ColorFilter.mode(
                           Theme.of(context).colorScheme.onSurface,
@@ -217,6 +217,7 @@ class SearchState extends ConsumerState<Search> {
               elevation: 0,
               enableFeedback: true,
               position: PopupMenuPosition.over,
+              color: Theme.of(context).colorScheme.surface,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.r),
               ),
@@ -284,10 +285,10 @@ class SearchState extends ConsumerState<Search> {
                         BlendMode.srcIn,
                       ),
                     ),
-                    10.horizontalSpace,
+                    5.horizontalSpace,
                     Text(
                       "List of variants",
-                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall!.copyWith(
                             color: Theme.of(context).colorScheme.surface,
                           ),
                     ),
